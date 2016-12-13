@@ -64,6 +64,13 @@
   </style>
 
   <script>
+    const inputs = document.querySelectorAll('.controls input'); //returns array with node list of all inputs with class control 
+  
+    function handleUpdate() {
+      console.log(this.value);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
   </script>
 
 </body>
